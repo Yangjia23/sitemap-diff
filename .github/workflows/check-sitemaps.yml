@@ -1,9 +1,9 @@
 name: Check Sitemaps
 
 on:
-  # 每 8 小时运行一次（0点、8点、16点 UTC）
+  # 每 4 小时运行一次（0点、4点、8点、12点、16点、20点 UTC）
   schedule:
-    - cron: '0 0,8,16 * * *'
+    - cron: '0 */4 * * *'
   # 允许手动触发
   workflow_dispatch:
 
